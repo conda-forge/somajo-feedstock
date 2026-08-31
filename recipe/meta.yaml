@@ -1,5 +1,5 @@
 {% set name = "somajo" %}
-{% set version = "2.4.3" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 848fcf6107bf10dec918cc16d8c40944b844757c2ed724b01a87ff391f68e6f7
+  sha256: baa6d8442e5e299ea3d81b8cdf6d3d14d86ff4aa3c89236a1c4b18692f31ff90
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
-  number: 1
+  number: 0
 
 requirements:
   host:
